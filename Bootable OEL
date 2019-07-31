@@ -1,0 +1,17 @@
+MAC Terminal Command to setup bootable ISO
+
+\\Open Terminal and run command-
+hdiutil convert -format UDRW -o ~/Path-to-IMG-file ~/Path-to-ISO-file 
+
+\\List Disk to find Bootable USB-
+diskutil list 
+
+\\Unmount Disk 
+diskutil unmountDisk /dev/diskN 
+
+\\Create Bootable
+sudo dd if=/Path-to-IMG-DMG-file of=/dev/rdiskN bs=1m
+
+\\Eject Disk after completion-
+diskutil eject /dev/diskN
+
