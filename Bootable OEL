@@ -10,7 +10,7 @@ diskutil list
 diskutil unmountDisk /dev/diskN 
 
 \\Create Bootable
-sudo dd if=/Path-to-IMG-DMG-file of=/dev/rdiskN bs=1m
+sudo dd if=~/Path-to-IMG-DMG-file of=/dev/rdiskN bs=1m
 
 \\Eject Disk after completion-
 diskutil eject /dev/diskN
